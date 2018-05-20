@@ -18,8 +18,6 @@ class App extends Component {
           </li>
         </ul> */}
   
-        <hr />
-  
         <Route exact path="/" component={SearchPage} />
       </div>
     </Router>
