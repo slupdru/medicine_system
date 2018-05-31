@@ -12,8 +12,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf ../back/public && react-scripts build && mv build ../back/public && cp ../login.html ../back/public",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "./node_modules/eslint/bin/eslint.js \"src/**/*.js\" --fix"
   }
 }
